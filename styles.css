@@ -1,0 +1,431 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+p
+{
+    font-weight: 200;
+    
+}
+
+
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7)url("newimg.jpg.webp");
+    background-blend-mode: darken;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2
+{
+    font-size: 40px;
+    color: beige;
+    margin-bottom: 20px;
+}
+.banner .content p{
+
+    font-size: 15px;
+    color: beige;
+    margin-bottom: 10px;
+}
+.btn
+{
+    font-size: 1em;
+    color: beige;
+    background: transparent;
+    border: 1px solid beige;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-decoration: none;
+    letter-spacing: 4px;
+    transition: 0.5s;
+    border-radius: 3px;
+}
+.btn:hover
+{
+    letter-spacing: 6px;
+    background-color: #ff0157;
+    color: beige;
+    border: 1px solid #ff0157;
+}
+header
+{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+header.sticky
+{
+    background:#fff;
+    padding:10px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header .logo
+{
+    color:beige;
+    font-weight:bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header .logo span
+{
+
+    color: #ff0157;
+}
+header .navigation
+{
+    position:relative;
+    display: flex;
+}
+header .navigation li
+{
+    list-style-type: none;
+    margin-left: 30px;
+
+}
+header .navigation li a
+{
+    color: beige;
+    text-decoration: none;
+    
+    font-weight: 300;
+}
+header.sticky  .navigation li a
+{
+    color: black;
+}
+header .navigation li a:hover
+{
+    color: #ff0157;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+   
+    transition: 0.4s;
+    
+}
+section
+{
+    padding: 100px;
+}
+.row
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50
+{
+    position:relative;
+    width:48%;
+}
+.titletxt
+{
+    font-weight: 600;
+    font-size: 20px;
+}
+.titletxt span{
+    color: #ff0157;
+    font-size: 30px;
+    font-weight: 600;
+}
+.row .col50 .imgbx
+{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+
+}
+.row .col50 .imgbx img
+{
+   position:absolute;
+   top: 80px;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   
+}
+.title
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contain
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+     
+}
+
+
+
+
+
+.all
+{
+   margin: 60px;
+   color:#052384;
+   border: 2px solid white;
+   padding: 0px;
+   box-shadow: 8px 15px 9px rgba(15, 15, 15, 0.08);
+
+}
+
+.predator
+{
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+  
+    
+}
+
+
+
+.wrapper
+{
+   
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 30px;
+    justify-content: space-around;
+    
+}
+.boy
+{
+    border: 2px solid black;
+    padding: 30px;
+    width: 300px;
+    background-color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    
+}
+.review-img
+{
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.reviews
+{
+    background-image:  url(leaves.jpg.png);
+    margin-top: 90px;
+    
+}
+.white .titletxt , .white blockquote
+{
+    color: white;
+}
+
+.name
+{
+    margin-left: 130px;
+    color: #ff0157;
+}
+.contactus
+{
+    background-size:cover;
+    background-image: url(lohithlapsimg.jpg);
+    margin-top: 30px;
+    
+
+
+}
+.contactform
+{
+    padding: 75px 50px;
+    background: beige;
+    box-shadow: 5px 5px 24px black;
+    max-width: 500px;
+    margin-top: 50px;
+ 
+}
+.contactform h3
+{
+    color: #111;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactform .inputbox 
+{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea
+{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactform .inputbox input[type="submit"]
+{
+    font-size: 15px;
+    color: beige;
+    background: #ff0157;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.copyrighttext
+{
+    padding: 8px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 20px;
+    
+   
+}
+    
+.copyrighttext p{
+    color: #333;
+    font-weight: 600;
+    padding: 10px;
+  
+
+}
+.lohith
+{
+    color: #ff0157;
+    font-size: 20px;
+    
+}
+
+
+
+
+@media (max-width:991px)
+{
+
+    header,header.sticky
+    {
+        padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position:fixed;
+        top:68px;
+        left:0;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background:beige;
+    }
+    header .navigation li
+    {
+        margin-left: 0;
+    }
+    header .navigation li a
+    {
+        text-decoration: none;
+        color: #111;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 40px;
+    }
+    .menutoggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(menutoggle.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        background-color: transparent;
+    }
+    .menutoggle.active
+    {
+        background: url(x-symbol.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    section
+    {
+        padding: 20px;
+    }
+    .banner .content h2
+    {
+        font-size: 3em;
+        color: beige;
+    }
+    .row
+    {
+        flex-direction: column;
+    }
+    .row .col50
+    {
+        position: relative;
+        width: 100%;
+
+    }
+    .row .col50 .imgbx
+    {
+        
+        height: 400px;
+        margin-top: 20px;
+    }
+    .boy{
+        margin-bottom: 10px;
+    }
+
+}

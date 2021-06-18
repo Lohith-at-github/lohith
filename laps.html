@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptops.com</title>
+</head>
+
+
+
+
+<style>
+    * {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        scroll-behavior: smooth;
+
+    }
+
+    #wrapper {
+        display: flex;
+        margin-top: 20px;
+        
+        border-bottom: 1px solid rgb(218, 216, 216);
+        padding: 20px 20px 50px 20px;
+    }
+
+    #mid {
+        width: 400px;
+        margin-left: 100px;
+
+    }
+
+    #end {
+        margin-left: 140px;
+        margin-top: 30px;
+        border: 1px solid rgb(218, 216, 216);
+        padding: 30px;
+        width: 300px;
+        height: 300px;
+    }
+
+    #img1 {
+        margin-top: 100px;
+        margin-left: 10px;
+    }
+
+    #first-a {
+        text-decoration: none;
+        color: rgb(65, 65, 131);
+        letter-spacing: 1px;
+    }
+
+    #sku-para {
+        font-size: 15px;
+        color: rgb(150, 141, 141);
+    }
+
+    #sku {
+        font-weight: 600;
+    }
+
+    #xbox {
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin-bottom: 6px;
+    }
+
+    #Gamepass {
+        font-size: 11px;
+        letter-spacing: 1px;
+        color: rgb(153, 150, 150);
+        margin-bottom: 4px;
+    }
+
+    #first-ul {
+        margin-left: -20px;
+        margin-bottom: 15px;
+        color: rgb(153, 150, 150);
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+
+    #descrpt-para {
+        border-top: 1px solid black;
+        padding-top: 10px;
+        font-size: 12px;
+        color: rgb(65, 65, 131);
+
+    }
+
+    .review-a {
+        text-decoration: none;
+        font-size: 12px;
+        word-spacing: 1px;
+        color:rgb(65, 65, 131); ;
+    }
+
+    .review-a:hover {
+        color: rgb(7, 145, 7);
+    }
+
+    #cost1 {
+        margin-left: 50px;
+        font-size: 20px;
+    }
+
+    #del1 {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    #instock1 {
+        color: rgb(33, 33, 160);
+        margin-left: 100px;
+        font-weight: 600;
+    }
+
+    #end-first {
+        border-bottom: 1px solid rgb(219, 217, 217);
+    }
+
+    #end-second {
+        margin-left: 60px;
+
+    }
+
+    #add-cart,
+    #Buy-now {
+        padding: 10px;
+        width: 160px;
+        background-color: rgb(9, 194, 9);
+        border: 1px solid rgb(9, 194, 9);
+        color: white;
+        border-radius: 4px;
+    }
+
+    #Buy-now:hover {
+        background-color: rgb(46, 46, 5);
+        border: 1px solid rgb(46, 46, 5);
+    }
+
+    #add-cart:hover {
+        background-color: rgb(46, 46, 5);
+        border: 1px solid rgb(46, 46, 5);
+    }
+
+    #newoffer {
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+
+    }
+
+    #peaceoffer1 {
+        margin-top: 20px;
+        color: rgb(150, 141, 141);
+        ;
+    }
+
+    #offeramt {
+        color: rgb(33, 33, 160);
+        font-size: 14px;
+    }
+
+    .frontedit {
+        position: relative;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.6)url("lapsmainimg.jpg");
+        background-blend-mode: darken;
+        background-size: cover;
+        margin-bottom: 100px;
+    }
+
+    .frontedit .content {
+        max-width: 900px;
+        text-align: center;
+    }
+
+    .frontedit .content h3 {
+        font-size: 30px;
+        color: beige;
+        margin-bottom: 20px;
+    }
+
+    .frontedit .content p {
+
+        font-size: 15px;
+        color: beige;
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        font-size: 1em;
+        color: beige;
+        background: transparent;
+        border: 1px solid beige;
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-right:60px ;
+        text-decoration: none;
+        letter-spacing: 3px;
+        transition: 0.5s;
+        border-radius: 3px;
+    }
+
+    .btn:hover {
+        letter-spacing: 4px;
+        background-color: rgb(9, 194, 9);
+        
+        color: beige;
+        border: 1px solid rgb(9, 194, 9);
+        
+    }
+
+    #GEFORCE {
+        display: flex;
+        justify-content: center;
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+
+    #house {
+        background-color: black;
+        color: white;
+        padding: 70px;
+    }
+
+    #GEFORCE-firstpara {
+        margin-left: 400px;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    #GEFORCE-secpara {
+        margin-left: 300px;
+        font-size: 12px;
+        padding-bottom: 50px;
+    }
+
+    #down-img {
+        padding-bottom: 100px;
+    }
+    #rtx
+    {
+        margin-bottom: 100px;
+    }
+    
+    #lang
+        {
+
+            color: rgb(212, 208, 208);   
+            background-color:rgb(53, 51, 51);
+            padding: 60px;
+           
+           
+        }
+        #lang p{
+            font-size: 13px;
+            line-height: 24px;
+        }
+       
+       
+        #cpyright
+        {
+            display: flex;
+            justify-content: center;
+            background-color:rgb(26, 23, 23);
+            padding: 70px;
+            color:rgb(110, 107, 107);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 13px;
+            letter-spacing: 2px;
+        }
+        #lohith
+        {
+            font-style: italic;
+        }
+        #goback
+        {
+           margin-right: 10px;
+           border:1px solid rgb(25, 100, 25);
+           background-color: rgb(25, 100, 25);
+           padding: 10px;
+           height: 20px;
+           width: 20px;
+           position: absolute;
+           right: 2px;
+           font-size: 20px;
+           border-radius: 2px;
+           
+          
+        }
+        #arrow-a
+        {
+            text-decoration: none;
+            color: white;
+        }
+
+        #arrow
+        {
+            display: flex;
+            justify-content: center;
+        }
+        li{
+            font-weight: 500;
+        }
+        @media (max-width:1200px) {
+            #wrapper
+            {
+                flex-direction: column;
+                flex-wrap: wrap;
+               
+            }
+            #down-img,#rtx
+            {
+                width: 700px;
+            }
+            
+        }
+
+   
+</style>
+
+
+
+<body>
+
+    <section class="frontedit" id="frontedit">
+        <div class="content">
+            <h3><q>  BEST LAPTOPS AT LOWEST PRICE  </q></h3>
+
+            <a href="#wrapper" class="btn">Shop</a>
+        </div>
+    </section>
+
+
+    
+    <div id="middle-content">
+
+<!-- 1st wrapper -->
+
+    <div id="wrapper">
+        <div>
+
+            <img src="laps(img1).png" alt="helios" title="helios" width="400px" id="img1">
+        </div>
+        <br>
+
+       
+
+
+
+
+        <div id="mid">
+            <a href="#"  id="first-a">Acer Predator Helios 300 Gaming Laptop Intel Core I7 10th Gen -
+                (16 GB/1TB SSD/ Nvidia RTX 3060/Windows 10 Home/144hz)
+                PH315-53 With 39.6 Cm (15.6 Inches) FHD IPS Display/ 2.3 Kgs</a>
+            <br><br>
+
+            <p><span id="sku">SKU : </span><span id="sku-para">NH.QCYSI.003</span> </p>
+            <p id="xbox">GET 1 MONTH XBOX GAME PASS FOR PC</p>
+
+            <p id="Gamepass">Get access to over 100 high-quality PC games on Windows 10! With one month subscription to
+                Game Pass you can download and play new games as soon as they launch! Learn More</p>
+
+           
+            <img src="Xbox-logo.jpg" alt="logo" title="logo" width="200px"><br>
+
+            <ul id="first-ul">
+                <li>10 Generation Intel® Core™ i7-10870H processor</li>
+                <li>Windows 10 Home 64-bit</li>
+                <li>1 TB SSD, PCIe Gen3, 8 Gb/s, NVMe</li>
+                <li>Alexa Built-in</li>
+                <li>Product Type : Laptop Computer</li>
+                <li>MRP : ₹1,66,000.00(Inclusive of all taxes)</li>
+                <li>Country of origin: india</li>
+            </ul>
+
+            <p id="descrpt-para"> 1st Year Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 at ₹
+                1299 T&C
+                <br>
+                6 Months No Cost EMI on HDFC, Axis & Yes Bank Credit Cards T&C
+            </p>
+            <br>
+            <a href="review.html" class="review-a">Be the first to review this product</a>
+
+        </div>
+
+
+
+
+        <div id="end">
+            <div id="end-first">
+                <span id="cost1">₹121,999.00</span> <del id="del1">₹166,000.00</del>
+                <br><br>
+                <span id="instock1"> &#10003; In Stock</span>
+                <br><br>
+            </div>
+            <div id="peaceoffer1">
+                <input type="checkbox" name="answer[]" value="yes" id="offer"> <label for="offer" id="newoffer">1st Year
+                    Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 [Offer Price: ₹ 1299 + Tax: ₹
+                    234] +<span id="offeramt"> ₹1,533.00</span></label>
+            </div>
+
+
+            <br><br>
+
+            <div id="end-second">
+                <button id="add-cart">Add to cart</button>
+                <br><br>
+                <button id="Buy-now">Buy Now</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!--2nd wrapper-->
+
+    <div id="wrapper">
+        <div>
+
+            <img src="acernitro.jpg" alt="helios" title="helios" width="400px" id="img1">
+        </div>
+        <br>
+
+
+
+
+        <div id="mid">
+            <a href="#"  id="first-a">Acer Nitro 5 gaming laptop Intel core i5 - 
+                11th Gen - 11300H (16 GB/512 GB SSD/Nvidia GTX 1650/ Windows 10 home/144hz)
+                 AN515 with 39.6 cm (15.6 inches) FHD display / 2.2 Kgs / XBOX Game Pass</a>
+            <br><br>
+
+            <p><span id="sku">SKU : </span><span id="sku-para">FX*.SDFG.043</span> </p>
+            <p id="xbox">GET 1 MONTH XBOX GAME PASS FOR PC</p>
+
+            <p id="Gamepass">Get access to over 100 high-quality PC games on Windows 10! With one month subscription to
+                Game Pass you can download and play new games as soon as they launch! Learn More</p>
+
+                <img src="Xbox-logo.jpg" alt="logo" title="logo" width="200px"><br>
+
+            <ul id="first-ul">
+                <li>11th Generation Intel® Core i7-11370H processor</li>
+                <li>Windows 10 Home 64-bit</li>
+                <li>1 TB SSD, PCIe Gen3, 8 Gb/s, NVMe</li>
+                <li>Alexa Built-in</li>
+                <li>Supports up to 2 TB HDD 6.3 cm (2.5-inch) 5400 RPM</li>
+                <li>MRP : ₹109,990.00(Inclusive of all taxes)</li>
+                <li>Country of origin: india</li>
+            </ul>
+
+            <p id="descrpt-para"> 1st Year Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 at ₹
+                1299 T&C
+                <br>
+                6 Months No Cost EMI on HDFC, Axis & Yes Bank Credit Cards T&C
+            </p>
+            <br>
+            <a href="review.html" class="review-a">Be the first to review this product</a>
+
+        </div>
+
+
+
+
+        <div id="end">
+            <div id="end-first">
+                <span id="cost1">₹84,999.00 </span> <del id="del1">₹109,990.00</del>
+                <br><br>
+                <span id="instock1"> &#10003; In Stock</span>
+                <br><br>
+            </div>
+            <div id="peaceoffer1">
+                <input type="checkbox" name="answer[]" value="yes" id="offe"> <label for="offe" id="newoffer">1st Year
+                    Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 [Offer Price: ₹ 1299 + Tax: ₹
+                    234] +<span id="offeramt"> ₹1,533.00</span></label>
+            </div>
+
+
+            <br><br>
+
+            <div id="end-second">
+                <button id="add-cart">Add to cart</button>
+                <br><br>
+                <button id="Buy-now">Buy Now</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!-- 3rd wrapper  -->
+
+    <div id="wrapper">
+        <div>
+
+            <img src="aspire1.jpg" alt="helios" title="helios" width="400px" id="img1">
+        </div>
+        <br>
+
+
+
+
+        <div id="mid">
+            <a href="#"  id="first-a">
+                Acer Aspire 7 Gaming Laptop Intel Core i5 10th Gen - (8GB RAM/512 GB SSD/NVIDIA GTX 1650/Windows 10 home/60hz)
+                 A715-75G with 39.6cm (15.6 inches) FHD display / 2.15 kgs</a>
+            <br><br>
+
+            <p><span id="sku">SKU : </span><span id="sku-para">#MG.AGTR.233</span> </p>
+            <p id="xbox">GET 1 MONTH XBOX GAME PASS FOR PC</p>
+
+            <p id="Gamepass">Get access to over 100 high-quality PC games on Windows 10! With one month subscription to
+                Game Pass you can download and play new games as soon as they launch! Learn More</p>
+
+                <img src="Xbox-logo.jpg" alt="logo" title="logo" width="200px"><br>
+
+            <ul id="first-ul">
+                <li>10th Generation Intel® Core™ i5-10300H processor</li>                
+                <li>Windows 10 Home 64-bit</li>
+                <li>512 GB SSD, PCIe Gen3, 8 Gb/s, NVMe</li>
+                <li>Alexa Built-in</li>
+                <li>Product Type : Laptop Computer</li>
+                <li>MRP : ₹140,000.00(Inclusive of all taxes)</li>
+                <li>Country of origin: india</li>
+            </ul>
+
+            <p id="descrpt-para"> 1st Year Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 at ₹
+                1299 T&C
+                <br>
+                6 Months No Cost EMI on HDFC, Axis & Yes Bank Credit Cards T&C
+            </p>
+            <br>
+            <a href="review.html" class="review-a">Be the first to review this product</a>
+
+        </div>
+
+
+
+
+        <div id="end">
+            <div id="end-first">
+                <span id="cost1">₹114,345.00</span> <del id="del1">₹140,000.00</del>
+                <br><br>
+                <span id="instock1"> &#10003; In Stock</span>
+                <br><br>
+            </div>
+            <div id="peaceoffer1">
+                <input type="checkbox" name="answer[]" value="yes" id="off"> <label for="off" id="newoffer">1st Year
+                    Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 [Offer Price: ₹ 1299 + Tax: ₹
+                    234] +<span id="offeramt"> ₹1,533.00</span></label>
+            </div>
+
+
+            <br><br>
+
+            <div id="end-second">
+                <button id="add-cart">Add to cart</button>
+                <br><br>
+                <button id="Buy-now">Buy Now</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!-- 4rd wrapper  -->
+
+    <div id="wrapper">
+        <div>
+
+            <img src="aspire2.jpg" alt="helios" title="helios" width="400px" id="img1">
+        </div>
+        <br>
+
+
+
+
+        <div id="mid">
+            <a href="#" id="first-a">Acer Swift 3 Thin and Light laptop Intel Core i5 11th gen
+                 - ( 8 GB/ 512 GB SSD/ Windows 10 home/ MS Office/ Iris Xe graphic)
+                 SF313-53-532J with 34.29 cm (13.5 inch) FHD display / 1.19 kg</a>
+            <br><br>
+
+            <p><span id="sku">SKU : </span><span id="sku-para">#RF.VBNC.896</span> </p>
+            
+
+            <br>
+
+            <ul id="first-ul">
+                <li>39.6 cm (15.6") display with IPS (In-Plane Switching) technology, Full HD 1920 x 1080, Acer ComfyView™ 
+                    LED-backlit TFT LCD</li>
+                <li>Fingerprint Reader</li>
+                <li>11th Generation Intel® Core™ i7-1165G7 processor</li>
+                <li>Windows 10 Home 64-bit</li>
+                <li>1 TB SSD, PCIe Gen3, 8 Gb/s, NVMe</li>
+                <li>Alexa Built-in</li>
+                <li>Product Type : Laptop Computer</li>
+                <li>MRP : ₹120,000.00(Inclusive of all taxes)</li>
+                <li>Country of origin: india</li>
+            </ul>
+
+            <p id="descrpt-para"> 1st Year Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 at ₹
+                1299 T&C
+                <br>
+                6 Months No Cost EMI on HDFC, Axis & Yes Bank Credit Cards T&C
+            </p>
+            <br>
+            <a href="review.html" class="review-a">Be the first to review this product</a>
+
+        </div>
+
+
+
+
+        <div id="end">
+            <div id="end-first">
+                <span id="cost1">₹93,000.00</span> <del id="del1">₹120,000.00</del>
+                <br><br>
+                <span id="instock1"> &#10003; In Stock</span>
+                <br><br>
+            </div>
+            <div id="peaceoffer1">
+                <input type="checkbox" name="answer[]" value="yes" id="of"> <label for="of" id="newoffer">1st Year
+                    Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 [Offer Price: ₹ 1299 + Tax: ₹
+                    234] +<span id="offeramt"> ₹1,533.00</span></label>
+            </div>
+
+
+            <br><br>
+
+            <div id="end-second">
+                <button id="add-cart">Add to cart</button>
+                <br><br>
+                <button id="Buy-now">Buy Now</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!-- 5rd wrapper  -->
+
+    <div id="wrapper">
+        <div>
+
+            <img src="acer-extensa1.png " alt="helios" title="helios" width="400px" id="img1">
+        </div>
+        <br>
+
+
+
+
+        <div id="mid">
+            <a href="#"  id="first-a">Acer Travelmate P4 thin & light Business laptop intel core i5 11th Gen - 
+                (8 GB/512 GB SSD/Windows 10 Pro) TMP414-51 with 35.5 cm (14 inches) 1.41 Kgs</a>
+            <br><br>
+
+            <p><span id="sku">SKU : </span><span id="sku-para">LS.PCWSI.104</span> </p>
+           
+
+            <br>
+            
+           
+
+        
+
+            <ul id="first-ul">
+                <li>39.6 cm (15.6") display with IPS (In-Plane Switching) technology, Full HD 1920 x 1080 pixel, 
+                    Acer ComfyView LED-backlit TFT LCD</li>
+                    <li>Fingerprint Reader</li>
+                <li>11th Generation Intel® Core™ i7-1165G7 processory</li>
+                <li>Windows 10 Home 64-bit</li>
+                <li>512 GB SSD, PCIe Gen3 8 Gb/s , NVMe</li>
+                <li>Alexa Built-in</li>
+                <li>Microsoft Office Home & Student 2019</li>
+                <li>MRP : ₹100,000.00(Inclusive of all taxes)</li>
+                <li>Country of origin: india</li>
+            </ul>
+
+            <p id="descrpt-para"> 1st Year Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 at ₹
+                1299 T&C
+                <br>
+                6 Months No Cost EMI on HDFC, Axis & Yes Bank Credit Cards T&C
+            </p>
+            <br>
+            <a href="review.html" class="review-a">Be the first to review this product</a>
+
+        </div>
+
+
+
+
+        <div id="end">
+            <div id="end-first">
+                <span id="cost1">₹56,000.00</span> <del id="del1">₹100,000.00</del>
+                <br><br>
+                <span id="instock1"> &#10003; In Stock</span>
+                <br><br>
+            </div>
+            <div id="peaceoffer1">
+                <input type="checkbox" name="answer[]" value="yes" id="ofer"> <label for="ofer" id="newoffer">1st Year
+                    Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 [Offer Price: ₹ 1299 + Tax: ₹
+                    234] +<span id="offeramt"> ₹1,533.00</span></label>
+            </div>
+
+
+            <br><br>
+
+            <div id="end-second">
+                <button id="add-cart">Add to cart</button>
+                <br><br>
+                <button id="Buy-now">Buy Now</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!-- 6rd wrapper  -->
+
+    <div id="wrapper">
+        <div>
+
+            <img src="aspire3.jpg" alt="helios" title="helios" width="400px" id="img1">
+        </div>
+        <br>
+
+
+
+
+        <div id="mid">
+            <a href="#"  id="first-a">
+                Acer Aspire 7 gaming laptop AMD Ryzen 5-5500U - ( 16GB/512 GB SSD/Nvidia GTX 1650/ Windows 10 home/60hz) 
+                A715-42G with 39.6 cm (15.6 inches) FHD display / 2.15 Kgs</a>
+            <br><br>
+
+            <p><span id="sku">SKU : </span><span id="sku-para">NH.QCYSI.003</span> </p>
+            <p id="xbox">GET 1 MONTH XBOX GAME PASS FOR PC</p>
+
+            <p id="Gamepass">Get access to over 100 high-quality PC games on Windows 10! With one month subscription to
+                Game Pass you can download and play new games as soon as they launch! Learn More</p>
+
+                <img src="Xbox-logo.jpg" alt="logo" title="logo" width="200px"><br>
+
+            <ul id="first-ul">
+                <li>AMD Ryzen™ 5-5500U hexa-core processor</li>
+                <li>Windows 10 Home 64-bit</li>
+                <li>512 GB SSD, PCIe Gen3, 8 Gb/s, NVMe</li>
+                <li>Alexa Built-in</li>
+                <li>Product Type : Laptop Computer</li>
+                <li>MRP : ₹196,000.00(Inclusive of all taxes)</li>
+                <li>Country of origin: india</li>
+            </ul>
+
+            <p id="descrpt-para"> 1st Year Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 at ₹
+                1299 T&C
+                <br>
+                6 Months No Cost EMI on HDFC, Axis & Yes Bank Credit Cards T&C
+            </p>
+            <br>
+            <a href="review.html" class="review-a">Be the first to review this product</a>
+
+        </div>
+
+
+
+
+        <div id="end">
+            <div id="end-first">
+                <span id="cost1">₹140,000.00</span> <del id="del1">₹196,000.00</del>
+                <br><br>
+                <span id="instock1"> &#10003; In Stock</span>
+                <br><br>
+            </div>
+            <div id="peaceoffer1">
+                <input type="checkbox" name="answer[]" value="yes" id="of-er"> <label for="of-er" id="newoffer">1st Year
+                    Accidental Damage Protection + 2 Year Extended Warranty worth ₹ 13,999 [Offer Price: ₹ 1299 + Tax: ₹
+                    234] +<span id="offeramt"> ₹1,533.00</span></label>
+            </div>
+
+
+            <br><br>
+
+            <div id="end-second">
+                <button id="add-cart">Add to cart</button>
+                <br><br>
+                <button id="Buy-now">Buy Now</button>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+    <!--image and laptop description-->
+
+    <div id="house">
+
+
+        <div id="nvdia">
+            <p id="GEFORCE">NVIDIA® GEFORCE RTX™ 30 SERIES</p>
+            <p id="GEFORCE-firstpara">These GPUs deliver the ultimate performance for gamers and creators. They’re
+                powered by NVIDIA’s </p>
+
+            <p id="GEFORCE-secpara">2nd Gen RTX Ampere architecture – with new Ray Tracing Cores, Tensor Cores, and
+                streaming multiprocessor
+                for a huge leap in performance</p>
+
+
+        </div>
+
+
+        <div>
+            <img src="nvdia.jpg" alt="nvdia" title="laptop" width="1400px" id="down-img">
+        </div>
+
+        <!--img2-->
+
+        <div id="nvdia">
+            <p id="GEFORCE">4TH GEN AEROBLADE™ 3D TECHNOLOGY</p>
+            <p id="GEFORCE-firstpara">These GPUs deliver the ultimate performance for gamers and creators. They’re
+                powered by NVIDIA’s </p>
+
+            <p id="GEFORCE-secpara">2nd Gen RTX Ampere architecture – with new Ray Tracing Cores, Tensor Cores, and
+                streaming multiprocessor
+                for a huge leap in performance</p>
+
+
+        </div>
+
+
+        <div>
+            <img src="rtx.jpg" alt="nvdia" title="laptop" width="1400px" id="rtx">
+        </div>
+       
+    </div>
+
+        <!--copyrights-->
+
+
+        <div id="lang">
+            © 2021 NVIDIA, the NVIDIA logo, and GeForce® RTX, GeForce Experience™, and NVIDIA Ampere™ Architecture, NVIDIA DLSS are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and other countries.
+                <br><br>
+                <p>1 - Specifications may vary depending on model and/or region. All models subject to availability.</p>
+                <p>2 - Non-native response time. Achieved via LCD overdrive function.</p>
+                <p> 3 - Aluminum Alloy includes display top and keyboard base area. User-facing frame and bottom are composed 
+                of high-grade ABS plastic.</p>
+                <p> 4 - Includes the effect of Intel® Thermal Velocity Boost (Intel® TVB), a feature that opportunistically and automatically 
+                increases clock frequency above single-core and multi-core Intel®</p>
+                <br><br>
+                <p style="color: rgb(20, 224, 20);">Prices and Specifications are subject to change without notice.</p>
+            </select>
+
+        </div>
+
+        <div id="cpyright">
+            <span>&#169; All copyrights reserved and owned by : <span id="lohith">lohith</span></span>
+            <div id="goback">
+           <a href="#wrapper" id="arrow-a"><span id="arrow">^</span></a>
+        </div>
+        </div>
+
+
+
+
+
+
+       
+
+</body>
+
+</html>
